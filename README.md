@@ -85,12 +85,12 @@ systemctl enable --now triple-play-production.service # :3400
 
 El ingress es el contenedor `agente-caddy-1` (Caddyfile en `/root/agente/Caddyfile`), con vhosts hacia `172.18.0.1:3300/3400` y TLS gestionado por Caddy (Let's Encrypt). El firewall (ufw) permite esos puertos desde `172.16.0.0/12` (redes docker).
 
-| URL | Instancia | Origen de datos |
-| --- | --- | --- |
-| `https://skeleton.triple-play.people-ia.com` | systemd :3300 | JSON mock |
-| `https://triple-play.people-ia.com` | systemd :3400 | PostgreSQL `skeletor` |
+| URL | Instancia | Origen de datos | Proxy Cloudflare |
+| --- | --- | --- | --- |
+| `https://skeleton.triple-play.people-ia.com` | systemd :3300 | JSON mock | no («DNS only») |
+| `https://triple-play.people-ia.com` | systemd :3400 | PostgreSQL `skeletor` | sí |
 
-Nota: el certificado Universal SSL de Cloudflare (`*.people-ia.com`) no cubre subdominios de segundo nivel (`skeleton.triple-play…`). Para ese host se requiere Total TLS / Advanced Certificate Manager en el panel de Cloudflare, o poner el registro en «DNS only» (el origen ya tiene su certificado válido).
+Nota SSL: el certificado Universal SSL de Cloudflare (`*.people-ia.com`) no cubre subdominios de segundo nivel (`skeleton.triple-play…`), por eso ese registro está en «DNS only» y el TLS lo sirve Caddy en el origen. Detalles, API y troubleshooting en [`docs/DESPLIEGUE.md`](docs/DESPLIEGUE.md).
 
 ## Verificación
 
