@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Código vendor del registro ReUI/shadcn, se mantiene upstream vía CLI.
+    "src/components/reui/**",
+    "src/components/examples/**",
   ]),
 ]);
 

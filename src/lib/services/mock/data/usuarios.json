@@ -1,0 +1,56 @@
+[
+  {
+    "id": "u-dev",
+    "username": "dev",
+    "password": "dev123",
+    "nombre": "Equipo Desarrollo",
+    "role": "desarrollador",
+    "level": 0,
+    "activo": true
+  },
+  {
+    "id": "u-propietario",
+    "username": "propietario",
+    "password": "propietario123",
+    "nombre": "Doña Reyna Martínez",
+    "role": "propietario",
+    "level": 4,
+    "activo": true
+  },
+  {
+    "id": "u-ana",
+    "username": "ana",
+    "password": "ana123",
+    "nombre": "Ana López",
+    "role": "usuario",
+    "level": 1,
+    "activo": true
+  },
+  {
+    "id": "u-luis",
+    "username": "luis",
+    "password": "luis123",
+    "nombre": "Luis Hernández",
+    "role": "usuario",
+    "level": 2,
+    "activo": true
+  },
+  {
+    "id": "u-carla",
+    "username": "carla",
+    "password": "carla123",
+    "nombre": "Carla Ramírez",
+    "role": "usuario",
+    "level": 3,
+    "activo": true
+  },
+  {
+    "id": "u-jorge",
+    "username": "jorge",
+    "password": "jorge123",
+    "nombre": "Jorge Salas",
+    "role": "usuario",
+    "level": 2,
+    "activo": false
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "v-1001",
+    "folio": "V-1001",
+    "diasAtras": 0,
+    "horasAtras": 2,
+    "estado": "completada",
+    "metodoPago": "efectivo",
+    "vendedorId": "u-ana",
+    "vendedorNombre": "Ana López",
+    "items": [
+      { "productoId": "p-003", "nombre": "Refresco Coca-Cola 600 ml", "cantidad": 2, "precioUnitario": 25.0 },
+      { "productoId": "p-006", "nombre": "Sabritas clásicas 45 g", "cantidad": 1, "precioUnitario": 21.0 }
+    ]
+  },
+  {
+    "id": "v-1002",
+    "folio": "V-1002",
+    "diasAtras": 0,
+    "horasAtras": 4,
+    "estado": "completada",
+    "metodoPago": "transferencia",
+    "vendedorId": "u-luis",
+    "vendedorNombre": "Luis Hernández",
+    "items": [
+      { "productoId": "p-001", "nombre": "Arroz verde Laurenti 1 kg", "cantidad": 3, "precioUnitario": 34.5 },
+      { "productoId": "p-010", "nombre": "Aceite Capullo 1 L", "cantidad": 1, "precioUnitario": 58.0 }
+    ]
+  },
+  {
+    "id": "v-1003",
+    "folio": "V-1003",
+    "diasAtras": 0,
+    "horasAtras": 6,
+    "estado": "pendiente",
+    "metodoPago": "efectivo",
+    "vendedorId": "u-carla",
+    "vendedorNombre": "Carla Ramírez",
+    "items": [
+      { "productoId": "p-004", "nombre": "Agua purificada Ciel 1 L", "cantidad": 6, "precioUnitario": 16.0 }
+    ]
+  },
+  {
+    "id": "v-1004",
+    "folio": "V-1004",
+    "diasAtras": 1,
+    "horasAtras": 0,
+    "estado": "completada",
+    "metodoPago": "efectivo",
+    "vendedorId": "u-ana",
+    "vendedorNombre": "Ana López",
+    "items": [
+      { "productoId": "p-007", "nombre": "Galletas Emachique marias 165 g", "cantidad": 2, "precioUnitario": 18.5 },
+      { "productoId": "p-005", "nombre": "Jugo Del Valle naranja 1 L", "cantidad": 1, "precioUnitario": 28.5 }
+    ]
+  },
+  {
+    "id": "v-1005",
+    "folio": "V-1005",
+    "diasAtras": 1,
+    "horasAtras": 0,
+    "estado": "cancelada",
+    "metodoPago": "transferencia",
+    "vendedorId": "u-jorge",
+    "vendedorNombre": "Jorge Salas",
+    "items": [
+      { "productoId": "p-012", "nombre": "Pilas AA Duracell (2 pzas)", "cantidad": 1, "precioUnitario": 55.0 }
+    ]
+  },
+  {
+    "id": "v-1006",
+    "folio": "V-1006",
+    "diasAtras": 2,
+    "horasAtras": 0,
+    "estado": "completada",
+    "metodoPago": "efectivo",
+    "vendedorId": "u-luis",
+    "vendedorNombre": "Luis Hernández",
+    "items": [
+      { "productoId": "p-002", "nombre": "Frijol negro La Sierra 1 kg", "cantidad": 4, "precioUnitario": 42.0 },
+      { "productoId": "p-008", "nombre": "Detergente Axion limón 900 ml", "cantidad": 1, "precioUnitario": 39.0 },
+      { "productoId": "p-011", "nombre": "Cacahuates salados 150 g", "cantidad": 2, "precioUnitario": 27.0 }
+    ]
+  },
+  {
+    "id": "v-1007",
+    "folio": "V-1007",
+    "diasAtras": 3,
+    "horasAtras": 0,
+    "estado": "completada",
+    "metodoPago": "efectivo",
+    "vendedorId": "u-ana",
+    "vendedorNombre": "Ana López",
+    "items": [
+      { "productoId": "p-003", "nombre": "Refresco Coca-Cola 600 ml", "cantidad": 6, "precioUnitario": 25.0 }
+    ]
+  },
+  {
+    "id": "v-1008",
+    "folio": "V-1008",
+    "diasAtras": 4,
+    "horasAtras": 0,
+    "estado": "completada",
+    "metodoPago": "transferencia",
+    "vendedorId": "u-carla",
+    "vendedorNombre": "Carla Ramírez",
+    "items": [
+      { "productoId": "p-009", "nombre": "Cloro Cloralex 1 L", "cantidad": 2, "precioUnitario": 22.5 },
+      { "productoId": "p-010", "nombre": "Aceite Capullo 1 L", "cantidad": 2, "precioUnitario": 58.0 }
+    ]
+  }
+]

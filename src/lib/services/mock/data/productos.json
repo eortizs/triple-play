@@ -1,0 +1,122 @@
+[
+  {
+    "id": "p-001",
+    "sku": "ABA-001",
+    "nombre": "Arroz verde Laurenti 1 kg",
+    "categoria": "abarrotes",
+    "precio": 34.5,
+    "stock": 24,
+    "minStock": 10,
+    "atributos": { "marca": "Laurenti", "unidad": "kg", "proveedor": "Distribuidora El Mayab" }
+  },
+  {
+    "id": "p-002",
+    "sku": "ABA-002",
+    "nombre": "Frijol negro La Sierra 1 kg",
+    "categoria": "abarrotes",
+    "precio": 42.0,
+    "stock": 8,
+    "minStock": 10,
+    "atributos": { "marca": "La Sierra", "unidad": "kg", "proveedor": "Distribuidora El Mayab" }
+  },
+  {
+    "id": "p-003",
+    "sku": "BEB-001",
+    "nombre": "Refresco Coca-Cola 600 ml",
+    "categoria": "bebidas",
+    "precio": 25.0,
+    "stock": 48,
+    "minStock": 24,
+    "atributos": { "marca": "Coca-Cola", "unidad": "botella", "proveedor": "Grupo Fomento MX" }
+  },
+  {
+    "id": "p-004",
+    "sku": "BEB-002",
+    "nombre": "Agua purificada Ciel 1 L",
+    "categoria": "bebidas",
+    "precio": 16.0,
+    "stock": 6,
+    "minStock": 12,
+    "atributos": { "marca": "Ciel", "unidad": "botella", "proveedor": "Grupo Fomento MX" }
+  },
+  {
+    "id": "p-005",
+    "sku": "BEB-003",
+    "nombre": "Jugo Del Valle naranja 1 L",
+    "categoria": "bebidas",
+    "precio": 28.5,
+    "stock": 15,
+    "minStock": 8,
+    "atributos": { "marca": "Del Valle", "unidad": "botella", "proveedor": "Grupo Fomento MX" }
+  },
+  {
+    "id": "p-006",
+    "sku": "SNK-001",
+    "nombre": "Sabritas clásicas 45 g",
+    "categoria": "snacks",
+    "precio": 21.0,
+    "stock": 60,
+    "minStock": 20,
+    "atributos": { "marca": "Sabritas", "unidad": "bolsa", "proveedor": "Bodegas Trejo" }
+  },
+  {
+    "id": "p-007",
+    "sku": "SNK-002",
+    "nombre": "Galletas Emachique marias 165 g",
+    "categoria": "snacks",
+    "precio": 18.5,
+    "stock": 5,
+    "minStock": 10,
+    "atributos": { "marca": "Gamesa", "unidad": "paquete", "proveedor": "Bodegas Trejo" }
+  },
+  {
+    "id": "p-008",
+    "sku": "LIM-001",
+    "nombre": "Detergente Axion limón 900 ml",
+    "categoria": "limpieza",
+    "precio": 39.0,
+    "stock": 12,
+    "minStock": 6,
+    "atributos": { "marca": "Axion", "unidad": "botella", "proveedor": "Productos Bello" }
+  },
+  {
+    "id": "p-009",
+    "sku": "LIM-002",
+    "nombre": "Cloro Cloralex 1 L",
+    "categoria": "limpieza",
+    "precio": 22.5,
+    "stock": 3,
+    "minStock": 8,
+    "atributos": { "marca": "Cloralex", "unidad": "botella", "proveedor": "Productos Bello" }
+  },
+  {
+    "id": "p-010",
+    "sku": "ABA-003",
+    "nombre": "Aceite Capullo 1 L",
+    "categoria": "abarrotes",
+    "precio": 58.0,
+    "stock": 18,
+    "minStock": 8,
+    "atributos": { "marca": "Capullo", "unidad": "botella", "proveedor": "Distribuidora El Mayab" }
+  },
+  {
+    "id": "p-011",
+    "sku": "SNK-003",
+    "nombre": "Cacahuates salados 150 g",
+    "categoria": "snacks",
+    "precio": 27.0,
+    "stock": 22,
+    "minStock": 10,
+    "atributos": { "marca": "La Crema", "unidad": "bolsa", "proveedor": "Bodegas Trejo" }
+  },
+  {
+    "id": "p-012",
+    "sku": "OTR-001",
+    "nombre": "Pilas AA Duracell (2 pzas)",
+    "categoria": "otros",
+    "precio": 55.0,
+    "stock": 9,
+    "minStock": 5,
+    "atributos": { "marca": "Duracell", "unidad": "paquete", "proveedor": "Productos Bello" }
+  }
+]

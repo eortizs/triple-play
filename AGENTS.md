@@ -1,3 +1,10 @@
+# triple-play — contexto de proyecto
+
+- El usuario habla español; el vocabulario de dominio y el copy de UI son en español.
+- `overview.md` (español) es la especificación y fuente de verdad — léela antes de trabajar en features.
+- `.env` contiene un token de GitHub: nunca imprimirlo, registrarlo en logs ni commitearlo.
+- Antes del primer commit, `.env` debe estar ignorado en `.gitignore`.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know
