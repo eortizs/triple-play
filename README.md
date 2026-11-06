@@ -71,6 +71,27 @@ Manifest, service worker (cache-first para estáticos, network-first para navega
 
 Copia `.env.example` a `.env.local` (skeleton) o usa `.env.production` en la VPS. Nunca commitear `.env*`.
 
+## Despliegue en VPS
+
+La app corre como dos servicios systemd con artefactos separados (`distDir` por modo, ya que `NEXT_PUBLIC_*` se inlinea en el build):
+
+```bash
+NEXT_PUBLIC_ENVIRONMENT_MODE=skeleton NEXT_DIST_DIR=.next-skeleton pnpm build
+NEXT_PUBLIC_ENVIRONMENT_MODE=production NEXT_DIST_DIR=.next-production pnpm build
+
+systemctl enable --now triple-play-skeleton.service   # :3300
+systemctl enable --now triple-play-production.service # :3400
+```
+
+El ingress es el contenedor `agente-caddy-1` (Caddyfile en `/root/agente/Caddyfile`), con vhosts hacia `172.18.0.1:3300/3400` y TLS gestionado por Caddy (Let's Encrypt). El firewall (ufw) permite esos puertos desde `172.16.0.0/12` (redes docker).
+
+| URL | Instancia | Origen de datos |
+| --- | --- | --- |
+| `https://skeleton.triple-play.people-ia.com` | systemd :3300 | JSON mock |
+| `https://triple-play.people-ia.com` | systemd :3400 | PostgreSQL `skeletor` |
+
+Nota: el certificado Universal SSL de Cloudflare (`*.people-ia.com`) no cubre subdominios de segundo nivel (`skeleton.triple-play…`). Para ese host se requiere Total TLS / Advanced Certificate Manager en el panel de Cloudflare, o poner el registro en «DNS only» (el origen ya tiene su certificado válido).
+
 ## Verificación
 
 ```bash
